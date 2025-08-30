@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_led.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,7 +104,12 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  
+  /* 测试printf输出 */
+  // printf("STM32H7RS 串口通信测试\r\n");
+  // printf("波特率: 460800\r\n");
+  // printf("GPIO: PB14(TX), PB15(RX)\r\n");
+  
   /* USER CODE END 2 */
 
   /* Init scheduler */
