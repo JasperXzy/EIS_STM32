@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bsp_led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -115,10 +115,16 @@ void MX_FREERTOS_Init(void) {
 void LED_Task(void *argument)
 {
   /* USER CODE BEGIN LED_Task */
+  /* LED初始化 */
+  BSP_LED_Init();
+  
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    // osDelay(1);
+
+    /* LED交替闪烁 */
+    BSP_LED_Alternate_Blink();
   }
   /* USER CODE END LED_Task */
 }
