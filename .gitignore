@@ -1,0 +1,55 @@
+# STM32编译生成文件
+*.bak
+*.ddk
+*.edk
+*.lst
+*.lnp
+*.mpf
+*.mpj
+*.obj
+*.omf
+*.plg
+*.rpt
+*.tmp
+*.__i
+*.crf
+*.o
+*.d
+*.axf
+*.tra
+*.dep
+*.iex
+*.htm
+*.map
+
+# Keil MDK-ARM相关文件
+*.dbgconf
+*.uvguix.*
+*.scvd
+
+# JLink日志文件
+JLinkLog.txt
+
+# 编译输出目录
+Debug/
+Release/
+build/
+obj/
+
+# 临时文件和缓存
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE配置文件
+# *.uvprojx
+# *.uvoptx
+
+# 其他常见临时文件
+*.log
+*.tmp
+*.temp
